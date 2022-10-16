@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app" class="bg-black min-h-screen p-10">
+    <div class="card bg-gray-800 max-w-sm mx-auto p-5 rounded">
+      <div class="card-header text-white uppercase">
+        calculator
+
+        
+      </div>
+      <div class="card-body">
+        <div class="bg-slate-800 rounded p-4 my-3 text-2lx uppercase text-right">
+          <div class="text-gray-400 pb-3" id="operate"></div>
+          <div class="text-white text-3xl" id="result">0</div>
+        </div>
+        <div class="flex">
+          <div class="w-10/12 px-2">
+
+            
+            <div class="grid grid-cols-3 px-4 gap-5 rounded">
+              <button class=" bg-red-300 rounded py-3 text-red-800" id="clear">c</button>
+              <button class="btnstyle ">(</button>
+              <button class="btnstyle ">)</button>
+              <button class="btnstyle" data-all>9</button>
+              <button class="btnstyle " data-all>8</button>
+              <button class="btnstyle " data-all>7</button>
+              <button class="btnstyle " data-all>4</button>
+              <button class="btnstyle " data-all>5</button>
+              <button class="btnstyle " data-all>6</button>
+              <button class="btnstyle " data-all>1</button>
+              <button class="btnstyle" data-all>2</button>
+              <button class="btnstyle" data-all>3</button>
+              <button class="btnstyle col-span-2 " data-all>0</button>
+              <button class="btnstyle" data-func>.</button>
+            </div>
+
+
+
+          </div>
+            <div class="w-2/12 flex flex-col gap-5">
+
+             <button class="btn" data-func>/</button>
+             <button class="btn" data-func>*</button>
+             <button class="btn" data-func>+</button>
+             <button class="btn" data-func>-</button>
+             <button class="bg-green-400 rounded py-3" id="equal">=</button>
+
+            </div>
+          
+        </div>
+    </div>
+  </div>
+</div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
